@@ -1,0 +1,103 @@
+{
+    "pl": {
+        "about_me": "Jestem programistą z ponad 5-letnim stażem. Moje umiejętności obejmują programowanie w językach takich jak JavaScript, TypeScript, Posiadam również wiedzę między innymi z zakresu HTML, CSS (SASS/LESS), GIT, REST.\n Przez ostatnie lata pracowałem nad różnymi projektami, zarówno jako freelancer jak i z zespołami programistów, zarówno dla małych klientów jak i dla dużych marek takich jak Huawei, McDonald's, SEAT. Swoje doświadczenie zdobyłem m.in. przy tworzeniu aplikacji webowych, systemów zarządzania treścią oraz aplikacji mobilnych.\n Stale poszukuję nowych wyzwań, aby poszerzać swoje umiejętności i rozwijać swoją karierę.W pracy zawsze staram się wykonywać swoje obowiązki tak, aby dostarczane przeze mnie rozwiązania były nie tylko funkcjonalne i przyjazne dla użytkownika, ale i napisane w sposób zapewniający czytelność kodu dla innych deweloperów przy zachowaniu odpowiedniej wydajności aplikacji.",
+        "content": {},
+        "techincals": {
+            "lang_framework": {
+                "js": {
+                    "name": "JavaScript",
+                    "logo": "link to logo",
+                    "stars": 3,
+                    "description": ""
+                },
+                "css": {
+                    "name": "CSS",
+                    "logo": "link to logo",
+                    "stars": 3,
+                    "description": ""
+                },
+                "html": {
+                    "name": "CSS",
+                    "logo": "link to logo",
+                    "stars": 3,
+                    "description": ""
+                },
+                "typescript": {
+                    "name": "CSS",
+                    "logo": "link to logo",
+                    "stars": 3,
+                    "description": ""
+                },
+                "react": {
+                    "name": "CSS",
+                    "logo": "link to logo",
+                    "stars": 3,
+                    "description": ""
+                },
+                "preprocessor": {
+                    "name": "CSS",
+                    "logo": "link to logo",
+                    "stars": 3,
+                    "description": ""
+                },
+                "jquery": {
+                    "name": "CSS",
+                    "logo": "link to logo",
+                    "stars": 3,
+                    "description": ""
+                },
+                "jest": {
+                    "name": "CSS",
+                    "logo": "link to logo",
+                    "stars": 3,
+                    "description": ""
+                },
+                "cypress": {
+                    "name": "CSS",
+                    "logo": "link to logo",
+                    "stars": 3,
+                    "description": ""
+                }
+            },
+            "knowlege": {
+                "git": {
+                    "description": ""
+                },
+                "SEO": {
+                    "description": ""
+                },
+                "Accessibility": {
+                    "description": ""
+                },
+                "OOP": {
+                    "description": ""
+                },
+                "TDD": {
+                    "description": ""
+                },
+                "RWD": {
+                    "description": ""
+                },
+                "REST": {
+                    "description": ""
+                },
+                "GULP": {
+                    "description": ""
+                },
+                "Nunjucks": {
+                    "description": ""
+                },
+                "adobe_photoshop": {
+                    "description": ""
+                },
+                "Agile": {
+                    "description": ""
+                },
+                "Jira": {
+                    "description": ""
+                }
+            }
+        },
+        "contact": {}
+    }
+}
