@@ -1,10 +1,10 @@
-import { Fragment } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 
 function App() {
     return (
-        <div className="App">
+        <Fragment>
             
-        </div>
+        </Fragment>
     )
 }
 
