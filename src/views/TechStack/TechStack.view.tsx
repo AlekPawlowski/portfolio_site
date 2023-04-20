@@ -1,5 +1,5 @@
-import MainSkils from "../interfaces/MainSkils.interface";
-import MainTechElement from "../components/MainTechElement.component";
+import MainSkils from "../../interfaces/MainSkils.interface";
+import MainTechElement from "./MainTechElement.component";
 
 const mainSkils: MainSkils[] = [
     {

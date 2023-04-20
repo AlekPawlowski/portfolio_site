@@ -1,4 +1,4 @@
-import MainSkils from "../interfaces/MainSkils.interface";
+import MainSkils from "../../interfaces/MainSkils.interface";
 
 export default function MainTechElement({...props}) {
     const { name, maestry} = props.techElement;
