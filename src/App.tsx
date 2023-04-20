@@ -1,9 +1,9 @@
 import { Fragment, useEffect, useState } from 'react';
-
+import TechStack from './views/TechStack.view';
 function App() {
     return (
         <Fragment>
-            
+            <TechStack />
         </Fragment>
     )
 }
