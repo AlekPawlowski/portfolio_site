@@ -28,7 +28,7 @@ const contactData: SocialElement[] = [
     },
     {
         name: "Email",
-        data: "mailto:alkemcompany.pawlowski@gmail.com"
+        data: "alkemcompany.pawlowski@gmail.com"
     },
     {
         name: "Codewars",

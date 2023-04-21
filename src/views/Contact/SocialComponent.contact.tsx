@@ -6,12 +6,11 @@ interface SocialComponentDescribe {
 }
 
 export const SocialComponent: FC<SocialComponentDescribe> = ({ socialElement }): JSX.Element => {
-    const { name, data } = socialElement;
-    if (typeof data === "number") {
-
-    }
+    const { name, data } = socialElement,
+        hrefValue = name.toLocaleLowerCase() === "email" ? `mailto:${data}` : data.toString();
+    
     return <article>
         <h3>{name}</h3>
-        <a href={data.toString()}>{data}</a>
+        <a href={hrefValue}>{data}</a>
     </article>
 }
