@@ -58,12 +58,12 @@ const additionalSkils: string[] = ["REST", "ES6", "Jira", "RWD", "Nunjucks", "Gi
 
 export default function TechStack() {
     return <section>
-        <h2>Stack technologiczny</h2>
-        <h3>Główne umiejętności:</h3>
+        <h2>Tech stack</h2>
+        <h3>Main skills:</h3>
         {mainSkils.map((element: MainSkils, index): JSX.Element => {
             const { id, name, maestry } = element;
             return <MainTechElement key={id} techElement={element} />
         })}
-        <h3>Dodatkowe umiejętności:</h3>
+        <h3>More abilities:</h3>
     </section>
 }
