@@ -21,6 +21,7 @@ function App(): JSX.Element {
 
     return (
         <section
+            id="main_section"
             className={`${transitionStage}`}
             onAnimationEnd={() => {
                 if (transitionStage === "fadeOut") {

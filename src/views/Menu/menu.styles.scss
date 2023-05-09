@@ -26,7 +26,8 @@ nav {
             background-color: white;
             transition: .5s ease-in-out;
         }
-        &:hover {
+        &:hover,
+        &.active {
             background-color: rgba(35, 42, 107, 1);
             &:after{
                 width: 100%;
