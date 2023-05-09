@@ -4,12 +4,12 @@ import { Outlet, Link } from 'react-router-dom';
 
 export default function Menu(): JSX.Element {
     return (<Fragment>
-        <header>
+        <nav className="">
             <Link to='/'>Home</Link>
-            <Link to='/aboutme'>O mnie</Link>
+            <Link to='/aboutme'>About me</Link>
             <Link to='/skils'>Tech stack</Link>
-            <Link to='/contact'>Kontakt</Link>
-        </header>
+            <Link to='/contact'>Contact</Link>
+        </nav>
         <Outlet />
     </Fragment>)
 }

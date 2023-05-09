@@ -1,0 +1,14 @@
+@import "./partials/normilize.scss";
+@import "./partials/variables.scss";
+@import "./partials/pageTransition.scss";
+
+@import "../views/Menu/menu.styles.scss";
+
+body {
+    background-color: #0a192f;
+    font-family: "Ubuntu", sans-serif;
+}
+
+#root {
+    display: flex;
+}
