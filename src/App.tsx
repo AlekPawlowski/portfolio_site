@@ -1,5 +1,5 @@
-import { Fragment, useEffect, useState } from 'react';
-import { BrowserRouter, Routes, Route, useLocation, useNavigate } from "react-router-dom";
+import { useEffect, useState } from 'react';
+import { Routes, Route, useLocation, } from "react-router-dom";
 
 import TechStack from './views/TechStack/TechStack.view';
 import Contact from './views/Contact/Contact.contact';
@@ -12,21 +12,24 @@ function App(): JSX.Element {
 
     const [displayLocation, setDisplayLocation] = useState(location);
     const [transitionStage, setTransistionStage] = useState("fadeIn");
+    const [afterAnimation, setAfterAnimation] = useState(false);
 
     useEffect(() => {
         if (location.pathname !== displayLocation.pathname) {
             setTransistionStage("fadeOut");
+            setAfterAnimation(false)
         }
     }, [location, displayLocation]);
 
     return (
         <section
             id="main_section"
-            className={`${transitionStage}`}
+            className={`${transitionStage} ${afterAnimation ? "animation_end" : ''}`}
             onAnimationEnd={() => {
                 if (transitionStage === "fadeOut") {
                     setTransistionStage("fadeIn");
                     setDisplayLocation(location);
+                    setAfterAnimation(true);
                 }
             }}
         >

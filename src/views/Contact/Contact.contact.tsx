@@ -41,7 +41,7 @@ const contactData: SocialElement[] = [
  * @return {JSXElement} JSXElement
  */
 export default function Contact() {
-    return <section className="contact">
+    return <section className="content_element" id="contact">
         <SocialsSection socialElementArray={contactData}/>
         <Form />
         <DownloadMaterials />

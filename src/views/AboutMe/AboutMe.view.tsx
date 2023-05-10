@@ -1,5 +1,5 @@
 export default function AboutMe() {
-    return <section className="">
+    return <section className="content_element">
         <article>
 
         <h2>Short info about me</h2>

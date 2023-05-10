@@ -57,7 +57,7 @@ const mainSkils: MainSkils[] = [
 const additionalSkils: string[] = ["REST", "ES6", "Jira", "RWD", "Nunjucks", "Git", "Adobe Photoshop/Ilustrator/XD", "SEO", "Accessibility", "Unit Test", "Agile", "OOP", "TDD", "FP"];
 
 export default function TechStack() {
-    return <section>
+    return <section className="content_element">
         <h2>Tech stack</h2>
         <h3>Main skills:</h3>
         {mainSkils.map((element: MainSkils, index): JSX.Element => {

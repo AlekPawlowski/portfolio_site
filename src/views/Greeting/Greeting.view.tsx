@@ -1,7 +1,11 @@
+import { useEffect } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 
 export function Greeting() {
-    return <section id="greeting">
+    useEffect(()=>{
+
+    }, );
+    return <section className="content_element" id="greeting">
         <p>Hi, My name is</p>
         <h1>Aleksander Pawlowski.</h1>
         <p>
