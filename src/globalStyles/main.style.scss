@@ -8,7 +8,9 @@ body {
     background-color: #0a192f;
     font-family: "Ubuntu", sans-serif;
 }
-
+section {
+    width: 100%;
+}
 #root {
     display: flex;
 }
@@ -20,4 +22,56 @@ body {
     display: flex;
     align-items: center;
     margin: 50px auto;
+}
+
+h1{
+    font-size: 40px;
+    color: #ccd6f6;
+}
+
+h2{
+    font-size: 30px;
+    color: #6495ED;
+}
+
+h3{
+    font-size: 24px;
+    color: #ccd6f6;
+}
+
+h4{
+    color: lightgray;
+}
+
+p{
+    color: #8892b0;
+    line-height: 150%;
+}
+
+.action_button{
+    background-color: transparent;
+    transition: .5s all;
+    border: 1px solid $borderColor;
+    border-radius: 5px;
+    a{
+        transition: 1s all;
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 20px;
+        color: $lightGrey;
+    }
+    &:hover{
+        background-color: white;
+        border-color: inherit;
+        // transform: scale(1.1);
+        a{
+            color: $mainColor;
+        }
+    }
+}
+
+.flex_content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

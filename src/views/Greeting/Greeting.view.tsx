@@ -6,11 +6,13 @@ export function Greeting() {
 
     }, );
     return <section className="content_element" id="greeting">
-        <p>Hi, My name is</p>
+        <h2>Hi, My name is</h2>
         <h1>Aleksander Pawlowski.</h1>
         <p>
             As a front-end developer, I have a deep passion for creating beautiful and interactive user interfaces through coding.
         </p>
-        <Link to='/contact'>Contact</Link>
+        <button className="action_button">
+            <Link to='/contact'>Contact</Link>
+        </button>
     </section>
 }
