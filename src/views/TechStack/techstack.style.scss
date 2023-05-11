@@ -18,3 +18,12 @@
         transition: 2000ms ease-in-out,
     }
 }
+
+#additional_skils{
+    gap: 20px 40px;
+    span{
+        display:inline-block;
+        color: lightgray;
+        position: relative;
+    }
+}

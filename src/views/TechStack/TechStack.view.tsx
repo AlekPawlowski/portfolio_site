@@ -66,7 +66,7 @@ const mainSkils: MainSkils[] = [
     }
 ]
 
-const additionalSkils: string[] = ["REST", "ES6", "Jira", "RWD", "Nunjucks", "Git", "Adobe Photoshop/Ilustrator/XD", "SEO", "Accessibility", "Unit Test", "Agile", "OOP", "TDD", "FP"];
+const additionalSkills: string[] = ["REST", "EcmaScript 2015+ (ES6)", "Jira", "Responsive web design (RWD)", "Nunjucks", "Git", "Adobe Photoshop/Ilustrator/XD", "SEO", "Accessibility", "Unit Test", "Agile", "Object oriented programing (OOP)", "Functional programing (FP)", "SOLID/DRY/KISS"];
 
 export default function TechStack() {
     const { techStackBarDely } = configuration;
@@ -82,7 +82,12 @@ export default function TechStack() {
                     return <MainTechElement key={id} techElement={element} delay={delay} />
                 })}
             </section>
-            <h3>More abilities:</h3>
+            <h3>Additional skills:</h3>
+            <section id="additional_skils" className="flex_content">
+                {additionalSkills.map((skill, index) => {
+                    return <span key={index}>{skill}</span>
+                })}
+            </section>
         </section>
     );
 }
