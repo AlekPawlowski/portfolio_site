@@ -23,10 +23,13 @@ section {
     align-items: center;
     margin: 50px auto;
 }
-
+h1,h2,h3{
+    margin: $spaceBetweenSections 0;
+}
 h1{
     font-size: 40px;
     color: #ccd6f6;
+    margin: 0;
 }
 
 h2{
@@ -41,6 +44,7 @@ h3{
 
 h4{
     color: lightgray;
+    margin: 12px 0;
 }
 
 p{
