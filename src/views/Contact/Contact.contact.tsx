@@ -14,7 +14,6 @@
 
 import SocialElement from "../../interfaces/SocialElement.interface"
 import SocialsSection from "./SocialSection.contact";
-import Form from "./Form.contact";
 import DownloadMaterials from "./DownloadMaterials.contact";
 
 const contactData: SocialElement[] = [
@@ -43,7 +42,6 @@ const contactData: SocialElement[] = [
 export default function Contact() {
     return <section className="content_element" id="contact">
         <SocialsSection socialElementArray={contactData}/>
-        <Form />
         <DownloadMaterials />
     </section>
 }

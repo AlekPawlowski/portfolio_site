@@ -73,7 +73,7 @@ export default function TechStack() {
 
     return (
         <section className="content_element">
-            <h2>Tech stack:</h2>
+            <h1>Tech stack:</h1>
             <h3>Main skills:</h3>
             <section id="main_skils" className="flex_content">
                 {mainSkils.map((element: MainSkils, index): JSX.Element => {

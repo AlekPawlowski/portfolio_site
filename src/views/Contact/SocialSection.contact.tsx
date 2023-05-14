@@ -9,7 +9,7 @@ interface SocialArray {
 const SocialsSection: FC<SocialArray> = ({ socialElementArray }): JSX.Element => {
 
     return <section>
-        <h2>Socials:</h2>
+        <h1>Socials:</h1>
         {
             socialElementArray.map((element, index) => {
                 const { name } = element;

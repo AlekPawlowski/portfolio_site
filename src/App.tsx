@@ -6,6 +6,7 @@ import Contact from './views/Contact/Contact.contact';
 import { Greeting } from './views/Greeting/Greeting.view';
 import AboutMe from './views/AboutMe/AboutMe.view';
 import Menu from './views/Menu/Menu.menu';
+import Experience from './views/Experience/Experience.view';
 
 function App(): JSX.Element {
     const location = useLocation();
@@ -36,8 +37,10 @@ function App(): JSX.Element {
             <Routes location={displayLocation}>
                 <Route index path="" element={<Greeting />} />
                 <Route path="aboutMe" element={<AboutMe />} />
+                <Route path="experience" element={<Experience />} />
                 <Route path="skils" element={<TechStack />} />
                 <Route path="contact" element={<Contact />} />
+
             </Routes>
         </section>
     )

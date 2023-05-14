@@ -10,6 +10,7 @@ export default function Menu(): JSX.Element {
         <nav>
             <MenuElement name="Home page" path="/" location={location.pathname} />
             <MenuElement name="About me" path="/aboutme" location={location.pathname} />
+            <MenuElement name="Expeience" path="/experience" location={location.pathname} />
             <MenuElement name="Tech stack" path="/skils" location={location.pathname} />
             <MenuElement name="Contact" path="/contact" location={location.pathname} />
         </nav>
