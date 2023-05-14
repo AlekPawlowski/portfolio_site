@@ -37,7 +37,7 @@ function App(): JSX.Element {
             <Routes location={displayLocation}>
                 <Route index path="" element={<Greeting />} />
                 <Route path="aboutMe" element={<AboutMe />} />
-                <Route path="experience" element={<Experience />} />
+                <Route path="Experience" element={<Experience />} />
                 <Route path="skils" element={<TechStack />} />
                 <Route path="contact" element={<Contact />} />
 

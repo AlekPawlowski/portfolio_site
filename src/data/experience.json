@@ -1,0 +1,66 @@
+{
+    "gcn": {
+        "id": 0,
+        "name": "Green Cafe Nero",
+        "occupaction": "Barista / Shift Leader",
+        "from": "01.2015",
+        "to": "06.2017",
+        "responsibilities": [
+            "Customer service",
+            "Maintaing human work as a shift leader"
+        ]
+    },
+    "he": {
+        "id": 1,
+        "name": "Gutenberg Network / Happy Endians",
+        "occupaction": "Junior Front End Developer / Front End Developer",
+        "from": "11.2017",
+        "to": "11.2021",
+        "techStack": [
+            "Javascript",
+            "Jquery",
+            "CSS (Sass/Less)",
+            "HTML (Twig/Nunjucs/Ejs)",
+            "Git",
+            "Adobe Photoshop",
+            "Jira"
+        ],
+        "responsibilities": [
+            "Creating interactive and responsive web application",
+            "Collaborating with designers, project menagers and backend developers",
+            "Testing and debugging software that I build",
+            "Work with brands like Huwawei, McDonald's, SEAT, Volkswagen, Polish Handbal Superleague"
+        ]
+    },
+    "fly": {
+        "id": 2,
+        "name": "Fly.pl Sp. z o.o",
+        "occupaction": "Front End Developer",
+        "from": "11.2021",
+        "to": "preasent",
+        "techStack": [
+            "Javascript",
+            "Typescript",
+            "Jquery",
+            "HTML (PUG)",
+            "CSS (Sass)",
+            "Git",
+            "Gulp",
+            "Adobe XD",
+            "Jira",
+            "Jest/Cypress"
+        ],
+        "resposibilities": [
+            "Proposing and provide technical solutions",
+            "Development of existing applications ",
+            "Creating a Front-end layer for new applications ",
+            "Monitoring and solving technical problems related to the software ",
+            "Creating project documentation ",
+            "Task management in Jira ",
+            "Development of projects for mobile devices ",
+            "Process optimization ",
+            "Unit tests ",
+            "Integration tests "
+        ]
+    }
+}
