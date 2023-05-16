@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react"
+import WorkElement from "./WorkElement.experience";
+import WorkElementInterface from "../../interfaces/Work.interface";
 
 export default function WorkSection(): JSX.Element {
     const [workExperience, setWorkExperience] = useState([]);
@@ -11,11 +13,12 @@ export default function WorkSection(): JSX.Element {
         };
         fetchData();
     }, [])
+
     return <section>
         <h2>Where I’ve Worked:</h2>
-        { Object.keys(workExperience).map((element, index) => {
-            const dat = workExperience[element as any];
-            return <div key={element}>element </div>
+        { Object.keys(workExperience).reverse().map((element, index) => {
+            const workElement: WorkElementInterface = workExperience[element as any];
+            return <WorkElement key={workElement.id} {...workElement} />
         })}
     </section>
 }
