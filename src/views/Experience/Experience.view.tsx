@@ -1,4 +1,5 @@
 import WorkSection from "./WorkSection.experience";
+import './experience.style.scss';
 
 export default function Experience(): JSX.Element {
     return (<section>

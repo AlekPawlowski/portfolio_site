@@ -1,0 +1,16 @@
+@import "../../globalStyles/partials/variables.scss";
+
+.work_element {
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    column-gap: 30px;
+    margin: 20px 0;
+    h3,
+    h4,
+    h5 {
+        margin: 10px 0;
+    }
+    h4 {
+        // font-size: 24px;
+    }
+}
