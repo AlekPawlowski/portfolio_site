@@ -3,6 +3,7 @@ import MainTechElement from "./MainTechElement.component";
 import configuration from "../config";
 
 import './techstack.style.scss';
+import RenderTxtBlockWithHeader from "../Components/RenderTxtBlockWithHeader.components";
 
 const mainSkils: MainSkils[] = [
     {
@@ -82,12 +83,18 @@ export default function TechStack() {
                     return <MainTechElement key={id} techElement={element} delay={delay} />
                 })}
             </section>
-            <h3>Additional skills:</h3>
+            <RenderTxtBlockWithHeader 
+                headTag={"h3"}
+                headContent={"Additional skills"}
+                contentContainerClassName={"additional_skils flex_content"}
+                content={additionalSkills}
+            />
+            {/* <h3>Additional skills:</h3>
             <section id="additional_skils" className="flex_content">
                 {additionalSkills.map((skill, index) => {
                     return <span key={index}>{skill}</span>
                 })}
-            </section>
+            </section> */}
         </section>
     );
 }

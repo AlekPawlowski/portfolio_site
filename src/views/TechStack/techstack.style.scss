@@ -22,9 +22,10 @@
     }
 }
 
-#additional_skils{
-    gap: 20px 40px;
-    span{
+.additional_skils{
+    padding: 0;
+    gap: 10px 40px;
+    li{
         display:inline-block;
         color: lightgray;
         position: relative;
