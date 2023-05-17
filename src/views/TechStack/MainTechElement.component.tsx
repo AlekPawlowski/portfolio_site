@@ -15,13 +15,16 @@ export default function MainTechElement({...props}) {
         });
       }, [percantage]);
 
-    return <section className="main_tech_element">
-        <h4>{name}</h4>
+    return <article className="main_tech_element">
+        <header>
+            <h4>{name}</h4>
+            <p>{percantage} / 100</p>
+        </header>
         <div className="main_tech_progress_bar">
             <div data-progress={maestry} style={{
                 width: `${percantage}%`, 
                 backgroundColor: color !== undefined ? color : 'red'
             }}></div>
         </div>
-    </section>
+    </article>
 }

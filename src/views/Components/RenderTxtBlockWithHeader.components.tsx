@@ -11,9 +11,7 @@ interface TxtBlock {
 */
 export default function RenderTxtBlockWithHeader({ ...props }: TxtBlock): JSX.Element {
     const { headTag, headContent, content, contentContainerClassName} = props;
- 
     const HeadTagName = `${headTag}` as keyof JSX.IntrinsicElements;
-
     return <Fragment>
         <HeadTagName>{headContent}</HeadTagName>
         <ul className={`${contentContainerClassName}`}>

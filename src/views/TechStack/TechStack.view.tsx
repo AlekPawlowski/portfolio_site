@@ -89,12 +89,6 @@ export default function TechStack() {
                 contentContainerClassName={"additional_skils flex_content"}
                 content={additionalSkills}
             />
-            {/* <h3>Additional skills:</h3>
-            <section id="additional_skils" className="flex_content">
-                {additionalSkills.map((skill, index) => {
-                    return <span key={index}>{skill}</span>
-                })}
-            </section> */}
         </section>
     );
 }

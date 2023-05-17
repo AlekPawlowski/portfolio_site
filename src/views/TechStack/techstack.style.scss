@@ -9,6 +9,15 @@
 .main_tech_element{
     max-width: 50%;
     margin-bottom: $spaceBetweenSections;
+    header{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    p{
+        font-size: 14px;
+        color: $techElementsColor;
+    }
 }
 .main_tech_progress_bar{
     width: 80%;
