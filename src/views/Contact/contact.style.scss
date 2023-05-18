@@ -1,0 +1,70 @@
+@import "../../globalStyles/partials/variables.scss";
+
+$flexGap: 20px;
+#contact{
+    // *{
+    //     text-align: center;
+    // }
+}
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    flex-grow: 1;
+    gap: 25px $flexGap;
+    position: relative;
+    padding-bottom: $separatorSpace;
+    margin-bottom: $separatorSpace;
+    article {
+        flex: calc(50% - $flexGap);
+    }
+    a {
+        color: $lightPurple;
+        text-decoration: none;
+        position: relative;
+        &::before {
+            content: " ";
+            position: absolute;
+            height: 2px;
+            width: 0;
+            background-color: $lightPurple;
+            bottom: -6px;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
+            z-index: 2;
+            transition: .5s all;
+        }
+        &:hover {
+            &:before {
+                width: 100%;
+            }
+        }
+    }
+}
+.download_elements{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    a{
+        color: $lightPurple;
+        text-decoration: none;
+        position: relative;
+        &::before {
+            content: " ";
+            position: absolute;
+            height: 2px;
+            width: 0;
+            background-color: $lightPurple;
+            bottom: -6px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            transition: .5s all;
+        }
+        &:hover {
+            &:before {
+                width: 100%;
+            }
+        }
+    }
+}

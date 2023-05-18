@@ -10,7 +10,7 @@ export const SocialComponent: FC<SocialComponentDescribe> = ({ socialElement }):
         hrefValue = name.toLocaleLowerCase() === "email" ? `mailto:${data}` : data.toString();
     
     return <article>
-        <h3>{name}</h3>
+        <h4>{name}:</h4>
         <a href={hrefValue}>{data}</a>
     </article>
 }

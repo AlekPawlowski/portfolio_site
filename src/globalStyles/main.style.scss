@@ -79,3 +79,144 @@ p{
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+$lineColor: white;
+$dotSize: 5px;
+$animationDuration: 1s;
+%separatorStyle {
+    position: absolute;
+    background-color: $lineColor;
+    bottom: 0;
+    left: 45%;
+    height: 2px;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+.start_separator {
+    width: 0%;
+    @extend %separatorStyle;
+    .bracket {
+        &:after {
+            transform: rotate(0deg);
+        }
+        &:before {
+            transform: rotate(0deg);
+        }
+        &.right_bracket {
+            right: -50px;
+            top: 50%;
+            transform: rotate(180deg);
+            transform-origin: 0px 1px;
+        }
+    }
+}
+
+.separator {
+    width: 60%;
+    @extend %separatorStyle;
+    .dot {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $lineColor;
+        border-radius: 15px;
+        width: $dotSize;
+        height: $dotSize;
+        animation: dotSizeAnim $animationDuration;
+        &.left_dot {
+            left: -15px;
+        }
+        &.right_dot {
+            right: -20px;
+        }
+    }
+    .bracket {
+        position: absolute;
+        top: 50%;
+        background-color: $lineColor;
+        transition: $animationDuration all;
+        &::after,
+        &::before {
+            content: " ";
+            transition: $animationDuration all;
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background-color: $lineColor;
+            border-radius: 5px;
+            transform-origin: 0 0;
+            animation-duration: $animationDuration;
+        }
+        &:after {
+            animation-name: bracketAnimAfter;
+            transform: rotate(-35deg);
+        }
+        &:before {
+            animation-name: bracketAnimBefore;
+            transform: rotate(35deg);
+        }
+        &.left_bracket {
+            left: -50px;
+        }
+        &.right_bracket {
+            right: -50px;
+            top: 50%;
+            transform: rotate(180deg);
+            transform-origin: 0px 1px;
+        }
+    }
+}
+
+// animation
+@keyframes dotSizeAnim {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    50% {
+        width: 0;
+        height: 0;
+    }
+    100% {
+        width: $dotSize;
+        height: $dotSize;
+    }
+}
+
+@keyframes bracketAnimBefore {
+    0% {
+        height: 0;
+        width: 0;
+        transform: rotate(0deg);
+    }
+    50% {
+        height: 2px;
+        width: 20px;
+        transform: rotate(0deg);
+    }
+    100% {
+        height: 2px;
+        width: 20px;
+
+        transform: rotate(35deg);
+    }
+}
+
+
+@keyframes bracketAnimAfter {
+    0% {
+        height: 0;
+        width: 0;
+        transform: rotate(0deg);
+    }
+    50% {
+        height: 2px;
+        width: 20px;
+        transform: rotate(0deg);
+    }
+    100% {
+        height: 2px;
+        width: 20px;
+        transform: rotate(-35deg);
+    }
+}
