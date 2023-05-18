@@ -14,7 +14,7 @@ export default function WorkSection(): JSX.Element {
         fetchData();
     }, [])
 
-    return <section>
+    return <section className="work_section">
         <h2>Where I’ve Worked:</h2>
         { Object.keys(workExperience).reverse().map((element, index) => {
             const workElement: WorkElementInterface = workExperience[element as any];
