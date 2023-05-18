@@ -1,6 +1,9 @@
 @import '../../globalStyles/partials/variables.scss';
 
 #main_skils {
+    position: relative;
+    margin-bottom: $separatorSpace;
+    padding-bottom: $separatorSpace;
     width: 100%;
     & > * {
         flex: 1 1 50%;

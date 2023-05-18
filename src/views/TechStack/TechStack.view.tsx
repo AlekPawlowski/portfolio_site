@@ -4,6 +4,7 @@ import configuration from "../config";
 
 import './techstack.style.scss';
 import RenderTxtBlockWithHeader from "../Components/RenderTxtBlockWithHeader.components";
+import AddSeparator from "../Components/AddSeparator.compoents";
 
 const mainSkils: MainSkils[] = [
     {
@@ -77,6 +78,7 @@ export default function TechStack() {
             <h1>Tech stack:</h1>
             <h3>Main skills:</h3>
             <section id="main_skils" className="flex_content">
+                <AddSeparator />
                 {mainSkils.map((element: MainSkils, index): JSX.Element => {
                     const { id, name, maestry } = element;
                     const delay = index * techStackBarDely;

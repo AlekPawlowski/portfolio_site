@@ -8,7 +8,6 @@ interface SocialArray {
 }
 
 const SocialsSection: FC<SocialArray> = ({ socialElementArray }): JSX.Element => {
-
     return <section className="socials">
         {
             socialElementArray.map((element, index) => {
