@@ -50,3 +50,39 @@
         }
     }
 }
+
+@media screen and (max-width: $mobileBreakpoint) {
+    $spaceBetweenBars: 12px;
+    $contentFontSize: 14px;
+    #main_skils{
+        h4{
+            font-size: $contentFontSize;
+        }
+        &> * {
+            flex: 1 100%;
+        }
+    }
+    .main_tech_element{
+        max-width: 100%;
+        margin-bottom: $spaceBetweenBars;
+        header{
+            width: 100%;
+            margin-bottom: $spaceBetweenBars;
+            *{
+                margin: 0;
+            }
+        }
+    }
+    .main_tech_progress_bar{
+        width: 100%;
+    }
+    .additional_skils{
+        gap: 10px 20px;
+        li{
+            font-size: $contentFontSize;
+            &:hover{
+                transform: scale(1);
+            }
+        }
+    }
+}

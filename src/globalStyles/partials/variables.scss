@@ -1,3 +1,5 @@
+$mobileBreakpoint: 768px;
+
 $borderColor: white;
 $mainColor: #0a192f;
 $lightGrey: #8892b0;
@@ -9,4 +11,5 @@ $secondaryFontColor: #12e1b9;
 $buttonHoverColor: rgba(255,255,255, .2);
 // margins
 $spaceBetweenSections: 24px;
-$separatorSpace: 60px
+$separatorSpace: 60px;
+$mobileSeparatorSpace: 30px;

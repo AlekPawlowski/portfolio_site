@@ -65,3 +65,39 @@ article:last-of-type {
         }
     }
 }
+
+@media screen and (max-width: $mobileBreakpoint) {
+    $listFontSize: 14px;
+    .work_element{
+        display: flex;
+        flex-direction: column;
+        gap: $spaceBetweenSections;
+        padding: $mobileSeparatorSpace 0;
+        h6{
+            color: $secondaryFontColor;
+            font-size: 18px;
+        }
+    }
+    .tech_stack_list{
+        gap: 10px;
+        margin-bottom: $spaceBetweenSections;
+        li{
+            font-size: $listFontSize;
+            &:hover{
+                transform: scale(1);
+            }
+        }
+    }
+    .resposibilities_list{
+        padding: 0;
+        text-align: left;
+        li{
+            line-height: 140%;
+            padding: 5px 0;
+            font-size: $listFontSize;
+            &::before{
+                margin-right: 5px;
+            }
+        }
+    }
+}

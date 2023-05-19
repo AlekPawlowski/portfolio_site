@@ -27,7 +27,6 @@ export default function Menu(): JSX.Element {
         }
         window.onresize = () => resizeEvent();
     }, [currentWindowSize])
-    
     return (<Fragment>
         {
             showHamburger 

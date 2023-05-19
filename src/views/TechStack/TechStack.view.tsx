@@ -68,7 +68,7 @@ const mainSkils: MainSkils[] = [
     }
 ]
 
-const additionalSkills: string[] = ["REST", "EcmaScript 2015+ (ES6)", "Jira", "Responsive web design (RWD)", "Nunjucks", "Git", "Adobe Photoshop/Ilustrator/XD", "SEO", "Accessibility", "Unit Test", "Agile", "Object oriented programing (OOP)", "Functional programing (FP)", "SOLID/DRY/KISS"];
+const additionalSkills: string[] = ["REST", "EcmaScript 2015+ (ES6)", "Jira", "Responsive web design (RWD)", "Nunjucks", "Git", "Adobe Photoshop/Ilustrator/XD", "SEO", "Accessibility", "Unit Test",  "Object oriented programing (OOP)", "Functional programing (FP)", "SOLID/DRY/KISS", "Agile",];
 
 export default function TechStack() {
     const { techStackBarDely } = configuration;

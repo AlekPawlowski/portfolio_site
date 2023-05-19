@@ -19,6 +19,7 @@ nav {
         color: white;
         text-decoration: none;
         position: relative;
+        cursor: pointer;
         &:after {
             content: " ";
             position: absolute;

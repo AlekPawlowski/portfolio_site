@@ -1,19 +1,19 @@
 @import "../../globalStyles/partials/variables.scss";
 
 $flexGap: 20px;
-#contact{
+#contact {
     // *{
     //     text-align: center;
     // }
-    h1{
+    h1 {
         color: $secondaryFontColor;
     }
-    p{
+    p {
         color: $mainFontColor;
     }
-    h4{
+    h4 {
         margin: 0;
-        transition: .5s all;
+        transition: 0.5s all;
     }
     a {
         text-decoration: none;
@@ -22,25 +22,25 @@ $flexGap: 20px;
         width: 80px;
         padding: 5px 50px 5px 20px;
         border-radius: 15px;
-        transition: .5s all;
-        &:hover{
+        transition: 0.5s all;
+        &:hover {
             background-color: $buttonHoverColor;
             padding-right: 65px;
             // padd
-            h4{
+            h4 {
                 color: $secondaryFontColor;
             }
         }
     }
-    .arrow{
+    .arrow {
         position: absolute;
         right: 15px;
         top: 55%;
         transform: rotate(180deg) translate(-50%, -50%);
         &:before,
-        &:after{
+        &:after {
             content: " ";
-            transition: .5s all;
+            transition: 0.5s all;
             width: 10px;
             height: 2px;
             position: absolute;
@@ -48,16 +48,15 @@ $flexGap: 20px;
             border-radius: 5px;
             transform-origin: 0 1px;
         }
-        &:after{
+        &:after {
             transform: rotate(-35deg);
         }
-        &:before{
+        &:before {
             transform: rotate(35deg);
         }
     }
 }
 .socials {
-    
     display: flex;
     flex-wrap: wrap;
     flex-basis: 50%;
@@ -69,21 +68,44 @@ $flexGap: 20px;
         flex: calc(50% - $flexGap);
         position: relative;
     }
-    h4{
+    h4 {
         color: $mainFontColor;
     }
-    a{
+    a {
         border: 1px solid $secondaryFontColor;
     }
 }
-.download_elements{
+.download_elements {
     width: 100%;
     display: flex;
     gap: 20px;
-    h4{
+    h4 {
         color: $secondaryFontColor;
     }
-    a{
+    a {
         border: 1px solid $mainFontColor;
+    }
+}
+
+@media screen and (max-width: $mobileBreakpoint) {
+    #contact {
+        a {
+            display: block;
+            max-width: 180px;
+            min-width: 125px;
+            width: auto;
+            box-sizing: border-box;
+            &:hover {
+                padding-right: 50px;
+            }
+        }
+    }
+    .socials {
+        flex-wrap: wrap;
+        article{
+            min-width: 125px;
+            max-width: calc(50% - $flexGap);
+        }
+        margin-bottom: $mobileSeparatorSpace;
     }
 }
