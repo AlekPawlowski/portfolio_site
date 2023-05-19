@@ -7,7 +7,7 @@ export default function WorkSection(): JSX.Element {
 
     useEffect(() => {
         const fetchData = async () => {
-            const data = await fetch('public/experience.json')
+            const data = await fetch('./experience.json')
                 .then(data => data.json())
             setWorkExperience(data);
         };
