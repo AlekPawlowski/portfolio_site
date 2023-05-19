@@ -5,8 +5,10 @@
 @import "../views/Menu/menu.styles.scss";
 
 body {
-    background-color: #204478;
+    background-color: #080F2b;
     font-family: "Ubuntu", sans-serif;
+    // background: rgb(2,0,36);
+    // background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(56,93,207,1) 71%, rgba(0,212,255,1) 100%);
 }
 section {
     width: 100%;
@@ -15,7 +17,7 @@ section {
     display: flex;
 }
 
-#main_section{
+#main_section {
     max-width: 80%;
     width: 100%;
     margin: 0 auto;
@@ -23,58 +25,60 @@ section {
     align-items: center;
     margin: 50px auto;
 }
-h1,h2,h3{
+h1,
+h2,
+h3 {
     margin: $spaceBetweenSections 0;
 }
-h1{
+h1 {
     font-size: 30px;
-    color: #6495ED;
+    color: $mainFontColor;
 }
 
-h2{
+h2 {
     font-size: 40px;
-    color: #ccd6f6;
+    color: $secondaryFontColor;
     margin: 0;
 }
 
-h3{
+h3 {
     font-size: 24px;
-    color: #ccd6f6;
+    color: $secondaryFontColor;
 }
 
-h4{
-    color: $techElementsColor;
+h4 {
+    color: $mainFontColor;
     margin: 12px 0;
 }
 
-p{
-    color: white;
+p {
+    color: $secondaryFontColor;
     line-height: 150%;
 }
 
-.action_button{
+.action_button {
     background-color: transparent;
-    transition: .5s all;
-    border: 1px solid $borderColor;
-    border-radius: 5px;
-    a{
-        transition: 1s all;
+    transition: 0.5s all;
+    border: 1px solid $secondaryFontColor;
+    border-radius: 25px;
+    a {
+        transition: .5s all;
         display: inline-block;
         text-decoration: none;
         padding: 10px 20px;
-        color: $lightGrey;
+        color: $mainFontColor;
     }
-    &:hover{
-        background-color: white;
-        border-color: inherit;
+    &:hover {
+        background-color: $buttonHoverColor;
+        // border-color: inherit;
         // transform: scale(1.1);
-        a{
-            color: $mainColor;
+        a {
+            color: $secondaryFontColor;
         }
     }
 }
 
-.flex_content{
+.flex_content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -118,7 +122,7 @@ $animationDuration: 1s;
         position: absolute;
         top: 50%;
         transform: translate(-50%, -50%);
-        background-color: $lineColor;
+        background-color: $secondaryFontColor;
         border-radius: 15px;
         width: $dotSize;
         height: $dotSize;
@@ -133,7 +137,7 @@ $animationDuration: 1s;
     .bracket {
         position: absolute;
         top: 50%;
-        background-color: $lineColor;
+        background-color: $secondaryFontColor;
         transition: $animationDuration all;
         &::after,
         &::before {
@@ -142,7 +146,7 @@ $animationDuration: 1s;
             position: absolute;
             width: 20px;
             height: 2px;
-            background-color: $lineColor;
+            background-color: $secondaryFontColor;
             border-radius: 5px;
             transform-origin: 0 0;
             animation-duration: $animationDuration;
@@ -201,7 +205,6 @@ $animationDuration: 1s;
         transform: rotate(35deg);
     }
 }
-
 
 @keyframes bracketAnimAfter {
     0% {

@@ -7,7 +7,7 @@ export function Greeting() {
     }, );
     return <section className="content_element" id="greeting">
         <h1>Hi, My name is</h1>
-        <h2>Aleksander Pawlowski.</h2>
+        <h2>Aleksander Pawłowski.</h2>
         <p>
             As a front-end developer, I have a deep passion for creating beautiful and interactive user interfaces through coding.
         </p>

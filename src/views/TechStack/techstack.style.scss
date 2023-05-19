@@ -17,9 +17,11 @@
         display: flex;
         justify-content: space-between;
     }
+    h4,p {
+        color: $mainFontColor;
+    }
     p{
         font-size: 14px;
-        color: $techElementsColor;
     }
 }
 .main_tech_progress_bar{
@@ -36,10 +38,15 @@
 
 .additional_skils{
     padding: 0;
-    gap: 10px 40px;
+    gap: 20px 40px;
     li{
         display:inline-block;
         color: lightgray;
         position: relative;
+        transition: .5s;
+        &:hover{
+            transform: scale(1.2);
+            color: $secondaryFontColor;
+        }
     }
 }

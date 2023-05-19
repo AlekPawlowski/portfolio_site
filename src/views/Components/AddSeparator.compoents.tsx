@@ -11,7 +11,7 @@ export default function AddSeparator() {
     return <div className={animationClass} >
         <div className="left_dot dot"></div>
         <div className="right_dot dot"></div>
-        <div className="left_bracket bracket"></div>
-        <div className="right_bracket bracket"></div>
+        {/* <div className="left_bracket bracket"></div>
+        <div className="right_bracket bracket"></div> */}
     </div>;
 }

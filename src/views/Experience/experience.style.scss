@@ -1,6 +1,5 @@
 @import "../../globalStyles/partials/variables.scss";
 
-
 .work_element {
     position: relative;
     display: grid;
@@ -17,12 +16,12 @@
     }
     h5 {
         font-size: 14px;
-        color: $lightPurple;
+        color: $mainFontColor;
     }
     h6 {
         margin: 0;
-        font-size: 18px;
-        color: $lightPurple;
+        font-size: 20px;
+        color: $mainFontColor;
     }
 }
 
@@ -34,21 +33,35 @@ article:last-of-type {
 
 .tech_stack_list {
     display: flex;
-    gap: 10px 15px;
+    gap: 25px;
     justify-content: flex-start;
     flex-wrap: wrap;
     padding: 0;
+    margin-bottom: 40px;
     li {
         list-style: none;
-        color: $techElementsColor;
-        font-size: 14px;
+        color: $mainFontColor;
+        font-size: 16px;
+        transition: 0.5s all;
+        &:hover {
+            transform: scale(1.2);
+            color: $secondaryFontColor;
+        }
     }
 }
 
 .resposibilities_list {
+    list-style-type: none;
     li {
         color: $techElementsColor;
         line-height: 160%;
+        &:before {
+            content: "\2022";
+            font-weight: bold;
+            display: inline-block;
+            width: 10px;
+            margin-right: 15px;
+            color: $secondaryFontColor;
+        }
     }
 }
-

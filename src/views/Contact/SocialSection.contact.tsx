@@ -15,7 +15,6 @@ const SocialsSection: FC<SocialArray> = ({ socialElementArray }): JSX.Element =>
                 return <SocialComponent key={name} socialElement={element} />
             })
         }
-        <AddSeparator />
     </section>
 };
 

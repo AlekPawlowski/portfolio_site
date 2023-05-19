@@ -15,7 +15,7 @@ export default function WorkSection(): JSX.Element {
     }, [])
 
     return <section className="work_section">
-        <h2>Where I’ve Worked:</h2>
+        <h2>Where I’ve worked:</h2>
         { Object.keys(workExperience).reverse().map((element, index) => {
             const workElement: WorkElementInterface = workExperience[element as any];
             return <WorkElement key={workElement.id} {...workElement} />

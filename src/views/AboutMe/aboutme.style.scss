@@ -1,7 +1,15 @@
+@import '../../globalStyles/partials/variables.scss';
+
 #about_me{
     display: grid;
     grid-template-columns: 3fr 2fr;
     gap: 50px;
+    h1{
+        color: $secondaryFontColor;
+    }
+    p{
+        color: $mainFontColor;
+    }
 }
 .image_container{
     position: relative;

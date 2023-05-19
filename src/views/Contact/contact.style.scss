@@ -5,66 +5,85 @@ $flexGap: 20px;
     // *{
     //     text-align: center;
     // }
+    h1{
+        color: $secondaryFontColor;
+    }
+    p{
+        color: $mainFontColor;
+    }
+    h4{
+        margin: 0;
+        transition: .5s all;
+    }
+    a {
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+        width: 80px;
+        padding: 5px 50px 5px 20px;
+        border-radius: 15px;
+        transition: .5s all;
+        &:hover{
+            background-color: $buttonHoverColor;
+            padding-right: 65px;
+            // padd
+            h4{
+                color: $secondaryFontColor;
+            }
+        }
+    }
+    .arrow{
+        position: absolute;
+        right: 15px;
+        top: 55%;
+        transform: rotate(180deg) translate(-50%, -50%);
+        &:before,
+        &:after{
+            content: " ";
+            transition: .5s all;
+            width: 10px;
+            height: 2px;
+            position: absolute;
+            background-color: $secondaryFontColor;
+            border-radius: 5px;
+            transform-origin: 0 1px;
+        }
+        &:after{
+            transform: rotate(-35deg);
+        }
+        &:before{
+            transform: rotate(35deg);
+        }
+    }
 }
 .socials {
+    
     display: flex;
     flex-wrap: wrap;
     flex-basis: 50%;
     flex-grow: 1;
     gap: 25px $flexGap;
     position: relative;
-    padding-bottom: $separatorSpace;
     margin-bottom: $separatorSpace;
     article {
         flex: calc(50% - $flexGap);
-    }
-    a {
-        color: $lightPurple;
-        text-decoration: none;
         position: relative;
-        &::before {
-            content: " ";
-            position: absolute;
-            height: 2px;
-            width: 0;
-            background-color: $lightPurple;
-            bottom: -6px;
-            // left: 50%;
-            // transform: translate(-50%, -50%);
-            z-index: 2;
-            transition: .5s all;
-        }
-        &:hover {
-            &:before {
-                width: 100%;
-            }
-        }
+    }
+    h4{
+        color: $mainFontColor;
+    }
+    a{
+        border: 1px solid $secondaryFontColor;
     }
 }
 .download_elements{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    gap: 20px;
+    h4{
+        color: $secondaryFontColor;
+    }
     a{
-        color: $lightPurple;
-        text-decoration: none;
-        position: relative;
-        &::before {
-            content: " ";
-            position: absolute;
-            height: 2px;
-            width: 0;
-            background-color: $lightPurple;
-            bottom: -6px;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-            transition: .5s all;
-        }
-        &:hover {
-            &:before {
-                width: 100%;
-            }
-        }
+        border: 1px solid $mainFontColor;
     }
 }
