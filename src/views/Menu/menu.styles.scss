@@ -89,13 +89,14 @@ nav {
             left: 0;
             height: 100%;
             width: 100%;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
         }
         &.active {
             left: 0;
             &::before {
                 backdrop-filter: blur(10px);
                 -webkit-backdrop-filter: blur(10px);
-                
             }
         }
     }
