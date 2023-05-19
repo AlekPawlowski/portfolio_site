@@ -52,11 +52,11 @@ export default function Contact() {
             <br />
             I will do my best to provide reply as soon as possible.
             <br />
-            Here are the canals:
+            Here are the social channels:
         </p>
         <SocialsSection socialElementArray={contactData}/>
         
-        <p>Or meaby you would like to have a look at my CV in order to get more compressed information about me, then feel free to download provided CV in Polish or English:</p>
+        <p>Or maybe you would like to have a look at my CV in order to get more compressed information about me, then feel free to download provided CV in Polish or English:</p>
         <DownloadMaterials />
     </section>
 }
