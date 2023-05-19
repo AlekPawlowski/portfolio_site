@@ -1,4 +1,3 @@
-
 nav {
     display: flex;
     flex-direction: column;
@@ -8,8 +7,10 @@ nav {
     min-height: 100vh;
     // background-color: rgba(35, 42, 107, 0.7);
     z-index: 1;
-    position:sticky;
+    position: sticky;
     top: 0;
+    left: 0;
+    transition: 0.5s all;
     a {
         padding: 10px 20px 10px 40px;
         width: auto;
@@ -18,7 +19,7 @@ nav {
         color: white;
         text-decoration: none;
         position: relative;
-        &:after{
+        &:after {
             content: " ";
             position: absolute;
             bottom: 0;
@@ -26,16 +27,65 @@ nav {
             height: 2px;
             width: 0%;
             background-color: white;
-            transition: .5s ease-in-out;
+            transition: 0.5s ease-in-out;
         }
         &:hover,
         &.active {
             // background-color: #235a86;
             // background-color: #387782;
             background-color: #2d3c42;
-            &:after{
+            &:after {
                 width: 100%;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hamburger_menu {
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        background-color: transparent;
+        border: none;
+        z-index: 999;
+        margin: 15px;
+        transition: 0.5s all;
+        outline: none;
+        .hamburger_line{
+            width: 32px;
+            height: 3px;
+            background-color: $secondaryFontColor;
+            margin: 8px;
+            transition: .5s all;
+            transform-origin: 50% 50%;
+            transform: translate(-50%, -50%);
+        }
+        &.active{
+            .top{
+                transform: translate(-50%, 10px) rotate(-45deg)
+            }
+            .middle{
+                transform:translateX(10px);
+                opacity: 0;
+            }
+            .bottom{
+                transform: translate(-50%, -11px) rotate(45deg)
+            }
+        }
+
+    }
+    nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        text-align: center;
+        height: 100%;
+        &.active {
+            left: 0;
+            backdrop-filter: blur(5px);
         }
     }
 }
