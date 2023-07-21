@@ -20,10 +20,10 @@ import './contact.style.scss'
 const contactData: SocialElement[] = [
     {
         name: "LinkedIn",
-        data: "https://www.linkedin.com/in/aleksander-paw%C5%82owski-340582148/"
+        data: "https://www.linkedin.com/in/aleksanderpawlowski/"
     },
     {
-        name: "Git",
+        name: "GitHub",
         data: "https://github.com/AlekPawlowski"
     },
     {
