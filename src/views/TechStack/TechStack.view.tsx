@@ -6,7 +6,7 @@ import './techstack.style.scss';
 import RenderTxtBlockWithHeader from "../Components/RenderTxtBlockWithHeader.components";
 import AddSeparator from "../Components/AddSeparator.compoents";
 
-const mainSkils: string[] = ["JavaScript", "Typescript", "CSS ( SCSS / Less )", "HTML", "React", "JQuery", "Cypress", "Jest.js"]
+const mainSkils: string[] = ["JavaScript", "Typescript", "CSS ( SCSS / Less )", "HTML", "React", "JQuery", "Cypress", "Jest.js", "Next.js"]
 
 const additionalSkills: string[] = ["Redux", "Axios", "Context Api", "CI/CD", "REST", "EcmaScript 2015+ (ES6)", "Jira", "Responsive web design (RWD)", "Nunjucks", "Git",  "Gulp", "Vite", "Adobe Photoshop/Ilustrator/XD", "SEO", "Accessibility", "Unit Test", "Object oriented programing (OOP)", "Functional programing (FP)", "SOLID/DRY/KISS", "Agile",];
 
