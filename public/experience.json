@@ -40,7 +40,7 @@
         "name": "Fly.pl sp. z o.o",
         "occupaction": "Front End Developer",
         "from": "11.2021",
-        "to": "preasent",
+        "to": "11.2023",
         "techStack": [
             "Javascript",
             "Typescript",
@@ -64,6 +64,34 @@
             "Process optimization ",
             "Unit tests ",
             "Integration tests "
+        ]
+    },
+    "publicis":{
+        "id": 3,
+        "name": "Publicis groupe",
+        "occupaction": "Senior Front End Developer",
+        "from": "11.2023",
+        "to": "preasent",
+        "techStack": [
+            "Typescript", 
+            "Javascript", 
+            "Node.js", 
+            "Astro.js",
+            "React",  
+            "Tailwind CSS/SCSS", 
+            "Vite", 
+            "playwright"
+        ],
+        "responsibilities":[
+            "Creation of new Frontend layers",
+            "Troubleshooting technical issues related to software",
+            "Creating project documentation and task management in Jira",
+            "Process optimization",
+            "Mentoring for junior and mid devs",
+            "Code Review to other developers",
+            "Organize and create task for myself and other teammembers",
+            "Close cooperation with QA team",
+            "Responsible for leading an in-house project as its owner, overseeing delivery, application strategy, and technology decisions."
         ]
     }
 }
